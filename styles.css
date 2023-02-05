@@ -4,9 +4,128 @@
     box-sizing: border-box;
 }
 
-.container h3{
-    text-align: center;
-    margin-top: 50px;
-    color: rgb(3, 66, 42);
+:root {
+    --shade1: #f7f7f7;
+    --shade2: #93deff;
+    --shade3: #606470; 
+    --shade4: #323643; 
 }
 
+::selection {
+    color: var(--shade1);
+    background-color: var(--shade4);
+}
+
+body{
+    background-color: var(--shade1);
+}
+
+nav{
+    background-color: var(--shade4);
+}
+
+nav .nav-item .nav-link{
+    color: var(--shade1);
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav .nav-item .nav-link:hover{
+    font-weight: bold;
+    transition: 0.4s;
+    margin-bottom: 2px solid var(--shade2);
+}
+
+nav .navbar-brand, nav .navbar-brand:hover{
+    font-family: 'Permanent Marker', cursive;
+    color: var(--shade1);
+    text-shadow: 2px 2px 4px var(--shade2);
+    font-size: 1.9em;
+    padding-left: 16px;
+    padding-right: 15px;
+}
+
+nav .container-fluid #mynavbar form{
+    padding-right: 16px;
+}
+
+nav .container-fluid #mynavbar form button{
+    background-color: var(--shade1);
+    color:var(--shade4);
+    text-shadow: 2px 2px 4px var(--shade2);
+    font-weight: bold;
+    border:none;
+}
+
+.container .row .col-md-3 .card .card-body a{
+    background-color: var(--shade4);
+    border:none;
+    font-weight: bold;
+    color: var(--shade1);
+}
+
+nav .container-fluid #mynavbar form input{
+    background-color: var(--shade1);
+}
+
+nav .container-fluid #mynavbar form button:hover, .container .row .col-md-3 .card .card-body a:hover{
+    background-color: var(--shade2);
+}
+
+nav .nav-item .nav-link:hover{
+    color: var(--shade2);
+}
+
+.carousel .carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    filter: grayscale(70%);
+}
+
+.title{
+    border-bottom: 2px solid var(--shade3);
+    padding-top: 24px;
+    color: var(--shade4);
+    text-shadow: 1px 1px 2px var(--shade2);
+    margin-bottom: 20px;
+}
+
+h5, a{
+    color: var(--shade4);
+}
+
+.card-text{
+    font-size:20px;
+    font-weight: bold;
+    color: var(--shade4); 
+}
+
+.card-text span{
+    text-decoration: line-through;
+    color: var(--shade3);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer{
+    background-color: var(--shade4);
+    padding: 16px;
+    margin-top: 32px;
+    color:var(--shade1);
+    text-align: center;
+    font-size: 17px;
+}
+
+/*
+.container .row .col-md-3 .card img{
+}
+*/
+
+/******************************************************************************************/
